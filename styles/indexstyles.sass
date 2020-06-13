@@ -1,0 +1,186 @@
+$heartback: #CDE2E8
+$heart: #718795
+$background: #F9F7EF
+$header: #D5D4E1
+$nav: #80A4B3
+
+
+*
+	margin: 0
+	padding: 0
+	font-family: 'Cormorant Garamond', serif
+	font-size: 1.06em
+
+#wrapping
+	width: 95%
+	margin: 0 auto
+
+.titles
+	width: 100%
+	text-align: center
+	color: $heart
+	background-color: $header
+	padding: 3% 0
+	font-size: 1.8em
+
+nav
+	background-color: $nav
+
+	ul 
+		list-style-type: none
+		li		
+
+			padding: 1.5% 2%
+			a
+				text-decoration: none
+				font-weight: 500
+				color: $heartback
+				padding: 1% 2%
+			a:hover
+				background-color: $heartback
+				color: $nav
+				box-shadow: 0px 0px 11px 1px $background
+				font-weight: 600
+				border: 1px solid $background
+
+
+
+main
+	background-color: $background
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-around
+
+
+#maintitle
+	width: 90%
+	text-align: center	
+	font-size: 1.9em
+	padding: 2% 0
+#filmlist
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-around
+
+
+.filmcontainer
+	display: flex
+	padding: 1%
+	border: 1px solid $nav
+	margin: 1% 0
+	flex-wrap: wrap
+	width: 45%
+	background-color: $header
+
+.filmcontainer:hover
+	background-color: $heartback
+
+.description
+	display: flex
+	flex-wrap: wrap
+	width: 60%
+	padding: 3%
+	h2
+		width: 100%
+	p
+		margin: 5% 0 0 0
+		font-size: 0.8em
+
+
+.like-button 
+	position: relative
+	width: 50px
+	height: 50px
+	border-radius: 50%
+	box-shadow: 0px 0px 11px 1px $nav
+	background: $heartback
+	display: flex
+	justify-content: center
+	align-items: center
+	margin: 0 auto
+	text-decoration: none
+	margin-left: 60%
+
+
+
+	&.is-active
+		.like-overlay
+			transform: scale(1)
+		i
+			&.not-liked
+				display: none
+
+			&.is-liked
+				display: block
+
+	i
+		&.not-liked
+			display: block
+			color: white
+			position: relative
+			z-index: 1
+
+		&.is-liked
+			display: none
+			color: white
+			position: relative
+			z-index: 1
+
+.like-button:hover
+	box-shadow: 0px 0px 11px 10px $nav
+	
+
+.like-overlay
+	display: block
+	position: absolute
+	top: 0
+	left: 0
+	width: 50px
+	height: 50px
+	border-radius: 50%
+	background: $heart
+	transform: scale(0)
+	transition: all .4s
+	z-index: 0
+
+@keyframes bouncy
+	from, to 
+		transform: scale(1, 1)
+	25%
+		transform: scale(0.9, 1.1)
+	50%
+		transform: scale(1.1, 0.9)
+	75%
+		transform: scale(0.95, 1.05)
+.bouncy
+	animation: bouncy 0.6s
+	animation-duration: 0.6s
+	animation-fill-mode: both
+
+.counter
+	position: relative
+	background-color: $heartback
+	box-shadow: 0px 0px 11px 1px $nav
+	width: 50px
+	height: 50px
+	border-radius: 50%
+	text-align: center
+	p
+		position: absolute
+		top: 16%
+		left: 34%
+
+#sorting
+	border: none
+	background: none
+	cursor: pointer
+	margin: 2% 1%
+	padding: 0 1%
+
+
+
+#sorting:hover
+	background-color: $heartback
+	box-shadow: 0px 0px 11px 1px $background
+	font-weight: 600
+	border: 1px solid $nav

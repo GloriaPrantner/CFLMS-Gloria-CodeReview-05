@@ -1,0 +1,34 @@
+var movies =`[{
+	"name": "Dr. Who",
+	"text": "The further adventures in time and space of the alien adventurer known as the Doctor and their companions from planet Earth.",
+	"img": "img/drWho.jpg",
+	"likes": " "
+}, {
+	"name": "Interstellar",
+	"text": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+	"img": "img/interstellar.jpg"
+},{
+	"name": "Dark",
+	"text": "A family saga with a supernatural twist, set in a German town, where the disappearance of two young children exposes the relationships among four families.",
+	"img": "img/dark.jpg"
+},{
+	"name": "Orphan Black",
+	"text": "A streetwise hustler is pulled into a compelling conspiracy after witnessing the suicide of a girl who looks just like her.",
+	"img": "img/orphanBlack.jpg"
+},{
+	"name": "Inception",
+	"text": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
+	"img": "img/inception.jpg"
+},{
+	"name": "The Witcher",
+	"text": "Geralt of Rivia, a solitary monster hunter, struggles to find his place in a world where people often prove more wicked than beasts.",
+	"img": "img/witcher.jpg"
+},{
+	"name": "The Hunger Games",
+	"text": "Katniss Everdeen voluntarily takes her younger sister's place in the Hunger Games: a televised competition in which two teenagers from each of the twelve Districts of Panem are chosen at random to fight to the death.",
+	"img": "img/hungerGames.jpg"
+},{
+	"name": "The Big Bang Theory",
+	"text": "A woman who moves into an apartment across the hall from two brilliant but socially awkward physicists shows them how little they know about life outside of the laboratory.",
+	"img": "img/bigBang.jpg"
+}]`;

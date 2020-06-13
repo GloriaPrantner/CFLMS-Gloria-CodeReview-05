@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.06em; }
+
+#wrapping {
+  width: 95%;
+  margin: 0 auto; }
+
+.titles {
+  width: 100%;
+  text-align: center;
+  color: #718795;
+  background-color: #D5D4E1;
+  padding: 3% 0;
+  font-size: 1.8em; }
+
+nav {
+  background-color: #80A4B3; }
+  nav ul {
+    list-style-type: none; }
+    nav ul li {
+      padding: 1.5% 2%; }
+      nav ul li a {
+        text-decoration: none;
+        font-weight: 500;
+        color: #CDE2E8;
+        padding: 1% 2%; }
+      nav ul li a:hover {
+        background-color: #CDE2E8;
+        color: #80A4B3;
+        box-shadow: 0px 0px 11px 1px #F9F7EF;
+        font-weight: 600;
+        border: 1px solid #F9F7EF; }
+
+main {
+  background-color: #F9F7EF;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+#maintitle {
+  width: 90%;
+  text-align: center;
+  font-size: 1.9em;
+  padding: 2% 0; }
+
+#filmlist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.filmcontainer {
+  display: flex;
+  padding: 1%;
+  border: 1px solid #80A4B3;
+  margin: 1% 0;
+  flex-wrap: wrap;
+  width: 45%;
+  background-color: #D5D4E1; }
+
+.filmcontainer:hover {
+  background-color: #CDE2E8; }
+
+.description {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  padding: 3%; }
+  .description h2 {
+    width: 100%; }
+  .description p {
+    margin: 5% 0 0 0;
+    font-size: 0.8em; }
+
+.like-button {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 11px 1px #80A4B3;
+  background: #CDE2E8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  text-decoration: none;
+  margin-left: 60%; }
+  .like-button.is-active .like-overlay {
+    transform: scale(1); }
+  .like-button.is-active i.not-liked {
+    display: none; }
+  .like-button.is-active i.is-liked {
+    display: block; }
+  .like-button i.not-liked {
+    display: block;
+    color: white;
+    position: relative;
+    z-index: 1; }
+  .like-button i.is-liked {
+    display: none;
+    color: white;
+    position: relative;
+    z-index: 1; }
+
+.like-button:hover {
+  box-shadow: 0px 0px 11px 10px #80A4B3; }
+
+.like-overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #718795;
+  transform: scale(0);
+  transition: all 0.4s;
+  z-index: 0; }
+
+@keyframes bouncy {
+  from, to {
+    transform: scale(1, 1); }
+  25% {
+    transform: scale(0.9, 1.1); }
+  50% {
+    transform: scale(1.1, 0.9); }
+  75% {
+    transform: scale(0.95, 1.05); } }
+.bouncy {
+  animation: bouncy 0.6s;
+  animation-duration: 0.6s;
+  animation-fill-mode: both; }
+
+.counter {
+  position: relative;
+  background-color: #CDE2E8;
+  box-shadow: 0px 0px 11px 1px #80A4B3;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center; }
+  .counter p {
+    position: absolute;
+    top: 16%;
+    left: 34%; }
+
+#sorting {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin: 2% 1%;
+  padding: 0 1%; }
+
+#sorting:hover {
+  background-color: #CDE2E8;
+  box-shadow: 0px 0px 11px 1px #F9F7EF;
+  font-weight: 600;
+  border: 1px solid #80A4B3; }
+
+/*# sourceMappingURL=indexstyles.css.map */
